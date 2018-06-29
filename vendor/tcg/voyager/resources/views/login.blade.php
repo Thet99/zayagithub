@@ -17,6 +17,9 @@
             border-top:5px solid {{ config('voyager.primary_color','#22A7F0') }};
             opacity:0.47;
         }
+        body.login .logo{
+            width:279px!important;
+        }
         @media (max-width: 767px) {
             .login-sidebar {
                 border-top:0px !important;

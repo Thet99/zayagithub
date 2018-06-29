@@ -86,7 +86,7 @@
 							/<a href="{{route('frontend.about')}}">About</a>							
 							/<a href="{{route('frontend.terms')}}">Terms & Conditions</a>
 							/<a href="{{route('frontend.faqs')}}">FAQs</a>
-							/<a href="#">Contact</a>
+							<!-- /<a href="#">Contact</a> -->
 						</div>
 						<div>
 							<a href="#" class="footer_link">Zayat</a> by Zware Group.  © 2018. Powered by <a class="footer_link_fbi" href="http://www.falconbreeze.com">Falcon IT Media Lab.</a>

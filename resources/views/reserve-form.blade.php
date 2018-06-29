@@ -84,20 +84,7 @@
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 								        <input class="mdl-textfield__input" name="email_personal" type="text" id="email-personal">
 								        <label class="mdl-textfield__label" for="email_personal">Email</label> 
-									</div>
-
-									<!-- Select with floating label -->
-							   <!--  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
-							        <input type="text" value="" class="mdl-textfield__input" id="sample3" readonly>
-							        <input type="hidden" value="" name="sample3">
-							        <label for="sample3" class="mdl-textfield__label">Country</label>
-							        <ul for="sample3" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-							            <li class="mdl-menu__item" data-val="DEU">Germany</li>
-							            <li class="mdl-menu__item" data-val="BLR">Belarus</li>
-							            <li class="mdl-menu__item" data-val="RUS">Russia</li>
-							        </ul>
-							    </div> -->
-                                            
+									</div>						 
 									
                                             
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -137,10 +124,10 @@
 										<div class="col-md-6">
 											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">									       
 										         <div class="input-group date datepicker" >
-							                    <input type="text" name="fro" class="mdl-textfield__input " id="form">
-							                    <span class="input-group-addon">
+							                    <input type="date" name="fro" class="mdl-textfield__input " id="form">
+							                    <!-- <span class="input-group-addon">
 							                        <span class="glyphicon glyphicon-calendar"></span>
-							                    </span>
+							                    </span> -->
 							                </div>
 										        <label class="mdl-textfield__label" for="fro">From</label> 
 											</div>
@@ -150,9 +137,9 @@
 											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 										        <div class="input-group date datepicker">
 							                    <input type="text" name="to" class="mdl-textfield__input ">
-							                    <span class="input-group-addon">
+							                    <!-- <span class="input-group-addon">
 							                        <span class="glyphicon glyphicon-calendar"></span>
-							                    </span>
+							                    </span> -->
 							                 </div>
 						                <label class="mdl-textfield__label" for="to">To</label> 
 											</div>
@@ -243,80 +230,12 @@
 
 
 									
-									// $('.datepicker1').each().on('click',function(){
-
-									//  	$('.datepicker1').each(function(){
-
-									//  	$(this).datetimepicker();
-									// });
-									//  });
 									
-									
-
-									// function Create() {
-									//     for (var i = 0; i < 10; i++) {
-									//         var dd='<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="cm_name" type="text" id="cm-name"><label class="mdl-textfield__label"  for="cm_name">Company Name</label></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="bs_type" type="text" id="bs-type"><label class="mdl-textfield__label" for="bs_type">Business Type</label></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="pposition" type="text" id="pposition"><label class="mdl-textfield__label" for="pposition">Position</label></div><div class="row"><div class="col-md-6"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><div class="input-group date datepicker1" id="datepicker"'+i+'"><input type="text" name="fro" class="mdl-textfield__input " id="form"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div><label class="mdl-textfield__label" for="fro">From</label> </div></div><div class="col-md-6"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><div class="input-group date datepicker1" id="datepicker"'+i+'"><input type="text" name="to" class="mdl-textfield__input "><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div><label class="mdl-textfield__label" for="to">To</label></div></div></div>';
-									        
-									//         $("#main").append(dd);
-
-									//         $('#main').find('.datepicker1').each(function(){									        	
-
-									//         	$(this).datetimepicker();
-
-									       
-
-									//         });
-									//     }
-									// }
-									    
-
-									    // $(document).ready(function () {
-
-										   //  $('div#datepicker').datetimepicker();
-										    
-										   //  var i = 1;
-										   //  $("adm").click(function () {
-										   //  	$('#cn_name').clone().appendTo('#main');
-										   //  	$('#bs_type').clone().appendTo('#main');
-										   //  	$('#pposition').clone().appendTo('#main');
-										    	// $("#twob").clone().find("input").each(function () {
-										     //        $(this).prop({
-										     //            'id': function (_, id) {
-										     //                return id + i
-										     //            },
-										     //                'name': function (_, name) {
-										     //                return name + i
-										     //            },
-										     //                'value': ''
-										     //        });
-										     //    }).end().appendTo("#main");
-										     //    i++;
-										     //    $("table tr:first").clone().find("input").each(function () {
-										     //        $(this).prop({
-										     //            'id': function (_, id) {
-										     //                return id + i
-										     //            },
-										     //                'name': function (_, name) {
-										     //                return name + i
-										     //            },
-										     //                'value': ''
-										     //        });
-										     //    }).end().appendTo("#main");
-										     //    i++;
-										        
-										//         $('input[id^=txtTitle]').removeClass('hasDatepicker');
-										        
-										//         $('input[id^=txtTitle]').datetimepicker();
-										        
-										//     });
-										// });
-
-										//var el = $('<a href="#">test</a>');
 										function myFunction(){
 											 datetimepicker().call(this);
 										}
 
-										var dd='<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="cm_name" type="text" id="cm-name"><label class="mdl-textfield__label"  for="cm_name">Company Name</label></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="bs_type" type="text" id="bs-type"><label class="mdl-textfield__label" for="bs_type">Business Type</label></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="pposition" type="text" id="pposition"><label class="mdl-textfield__label" for="pposition">Position</label></div><div class="row" class="add_more"><div class="col-md-6"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><div class="input-group date datepicker1" onclick="myFunction();"><input type="text" name="fro" class="mdl-textfield__input " id="form"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div><label class="mdl-textfield__label" for="fro">From</label> </div></div><div class="col-md-6"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><div class="input-group date datepicker1"><input type="text" name="to" class="mdl-textfield__input "><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div><label class="mdl-textfield__label" for="to">To</label></div></div></div>';
+										var dd='<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="cm_name" type="text" id="cm-name"><label class="mdl-textfield__label"  for="cm_name">Company Name</label></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="bs_type" type="text" id="bs-type"><label class="mdl-textfield__label" for="bs_type">Business Type</label></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" name="pposition" type="text" id="pposition"><label class="mdl-textfield__label" for="pposition">Position</label></div><div class="row" class="add_more"><div class="col-md-6"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><div class="input-group date datepicker1" onclick="myFunction();"><input type="date" name="fro" class="mdl-textfield__input " id="form"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div><label class="mdl-textfield__label" for="fro">From</label> </div></div><div class="col-md-6"><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><div class="input-group date datepicker1"><input type="date" name="to" class="mdl-textfield__input "><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div><label class="mdl-textfield__label" for="to">To</label></div></div></div>';
 
 											$('#adm').on('click',function(){
 												$("#main").append(dd);

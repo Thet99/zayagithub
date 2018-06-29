@@ -308,6 +308,16 @@ class EventController extends Controller
      }
 
 
+     public function show($id){
+
+     	$event::find($id);
+     	$ephotos=Ephoto::all()->where('event_id',$id);	
+
+     	return Voyager::view('voyager::events.show',compact('event','ehpotos'));
+
+     }
+
+
 	
 }
  

@@ -112,7 +112,8 @@ Route::group(['as' => 'voyager.'], function () {
             Route::post('/store', ['uses' => $namespacePrefix.'EventController@store',  'as' => 'store']);
             Route::get('/edit/{id}', ['uses' => $namespacePrefix.'EventController@edit', 'as' => 'edit']);
             Route::post('/update', ['uses' => $namespacePrefix.'EventController@update', 'as' => 'update']);
-              Route::post('/delete/{id}', ['uses' => $namespacePrefix.'EventController@destroy', 'as' => 'delete']);
+            Route::post('/delete/{id}', ['uses' => $namespacePrefix.'EventController@destroy', 'as' => 'delete']);
+             Route::post('/detail/{id}', ['uses' => $namespacePrefix.'EventController@show', 'as' => 'show']);
             
         });
 
