@@ -96,6 +96,7 @@
 
 /* Jinpa */
 .pricing--jinpa .pricing--item {
+	width:50%;
 	margin: 1.5em 0;
 	padding: 2em;
 	cursor: default;

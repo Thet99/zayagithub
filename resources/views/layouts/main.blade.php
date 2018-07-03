@@ -1,5 +1,10 @@
 
 @include('partials.header')
+@if(\Session::has('flash_sent'))
+<div class="alert alert-success">
+{!!\Session::get('flash_sent')!!}	
+</div>
+@endif
 
 		<!-- Header End -->
 

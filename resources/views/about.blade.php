@@ -5,7 +5,7 @@
 			<div class="container clearfix">
 				<h1>About Us</h1>
 				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
+					<li><a href="{{route('home')}}">Home</a></li>
 					<li><a href="#">About Us</a></li>
 				</ol>
 			</div>

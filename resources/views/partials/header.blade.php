@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" type="text/css"/>
   <link rel="stylesheet" href="{{asset('css/responsive.css')}}" type="text/css" />  
   <link rel="stylesheet" href="{{{asset('css/components/pricing-table.css')}}}" type="text/css"/>
+  <link rel="stylesheet" href="{{asset('css/getmdl-select.min.css')}}">
   <!--javascript-->     
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
@@ -27,6 +28,7 @@
   <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
  <!--  <script async src="//jsfiddle.net/chiragraninga/MMmyU/embed/"></script> -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+  <script type="text/javascript" src="{{asset('js/getmdl-select.min.js')}}"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
   <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
   <script async src="//jsfiddle.net/chiragraninga/MMmyU/embed/"></script> -->

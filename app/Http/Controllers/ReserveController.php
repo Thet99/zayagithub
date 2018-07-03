@@ -9,10 +9,11 @@ use App\Reserve;
 
 class ReserveController extends Controller
 {
-    //store reserve information to database @param: input fields, request
+    //store reserve information to database @param: input fields, requests
+
 
     public function store(Request $request){
-
+    //dd($request);
 
     	$id= DB::table('resmembers')->insertGetId(
     	array(
@@ -53,25 +54,42 @@ class ReserveController extends Controller
             );
         };
 
-
         if($empinfo){
+            
+            $empinfo1=DB::table('imploymentinfo')->insert(
+
+                [
+                    'member_id'=>$id,
+                    'company_name'=>$request->cm_name1,
+                    'business_type'=>$request->bs_type1,
+                    'position'=>$request->pposition1,
+                    'start'=>$request->fro1,
+                    'end'=>$request->to1,
+
+                ]
+
+            );
+        };
 
 
-           $emergency_contact=DB::table('emerygency_contenc')->insert(['member_id'=>$id,'name'=>$request->name,'email'=>$request->email,'phone'=>$request->phone]);
+        if($empinfo1){
+
+
+           $emergency_contact=DB::table('emergency_contact')->insert(['member_id'=>$id,'name'=>$request->emergency_name,'email'=>$request->emergency_email,'phone'=>$request->emergency_phone]);
 
         }
 
 
         if($emergency_contact){
 
-            $membership_proposal=DB::table('membership_proposal')->insert(['membership'=>$request->proposal_level,'start'=>$request->ppl_start,'end'=>$request->ppl_end,'proposal_date'=>$request->proposal_date]);
+            $membership_proposal=DB::table('membership_proposal')->insert(['membership_name'=>$request->proposal_level,'member_id'=>$id,'start'=>$request->ppl_start,'end'=>$request->ppl_end,'applicant_sign'=>$request->signature,'proposal_date'=>$request->proposal_date]);
         }
 
 
 
-         if($emergcency){
+         if($emergency_contact){
 
-           return redirect()->back();
+           return redirect()->back()->with('flash_success','Successfully Sent');
 
      }
 

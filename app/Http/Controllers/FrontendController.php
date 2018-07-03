@@ -135,10 +135,10 @@ class FrontendController extends Controller
         return view('reserve-form',compact('membership_plan','positions'));
     }
 
-    public function makeReserve(Request $request){
-        $data=$request->all();
-        //dd($data);
-    }
+    // public function makeReserve(Request $request){
+    //     $data=$request->all();
+    //     //dd($data);
+    // }
 
 
 
@@ -156,7 +156,6 @@ class FrontendController extends Controller
 
                         $recs[]=$u->email;
                     }
-
                     $recepient_mail=$recs;
                     //$recepient_mail=implode(',',$recs);  
                     //$recepient_mail=trim($tecepienta_mail);  
